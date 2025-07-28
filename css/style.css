@@ -286,7 +286,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/portfolio/desktop/imgdesk@hero-bg-1x.webp");
+    url("../images/portfolio/mobile/dark-bg@hero-bg1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -302,7 +302,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/portfolio/desktop/imgdesk@hero-bg-2x.webp");
+      url("../images/portfolio/mobile/dark-bg@hero-bg2x.webp");
     width: 100%;
   }
 }
@@ -337,7 +337,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/portfolio/mobile/dark-bg@hero-bg1x.webp");
+      url("../images/portfolio/desktop/imgdesk@hero-bg-1x.webp");
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
@@ -349,7 +349,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/portfolio/mobile/dark-bg@hero-bg2x.webp");
+      url("../images/portfolio/desktop/imgdesk@hero-bg-2x.webp");
   }
 }
 
@@ -828,6 +828,7 @@ button {
 .footer-social-list {
   display: flex;
   gap: 16px;
+  grid-area: icons;
 }
 .footer-social-item {
   /* display: flex;
@@ -1136,7 +1137,12 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   position: fixed;
   inset: 0;
   transform: translateX(100%);
-  display: flex;
+  display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+    grid-template-areas:
+        ". content ."
+        ". contacts ."
+        ". icons.";
   flex-direction: column;
   background-color: #ffffff;
   padding: 72px 16px 40px 16px;
@@ -1162,6 +1168,7 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   flex-direction: column;
   gap: 40px;
   margin-bottom: auto;
+  grid-area: content;
 }
 .mobile-menu-link {
   font-weight: 700;
@@ -1179,6 +1186,7 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  grid-area: contacts;
 }
 .contacts-link {
   font-weight: 500;

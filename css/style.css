@@ -159,7 +159,6 @@ button {
     flex-direction: row;
   }
 }
-
 @media only screen and (max-width: 767.98px) {
   .address-menu {
     display: none;
@@ -960,7 +959,7 @@ button {
 }
 .modal {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   width: 288px;
   min-height: 623px;
@@ -974,7 +973,7 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .modal {
-    top: 55%;
+    top: 50%;
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px;
@@ -1140,7 +1139,7 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 72px 24px 40px 16px;
+  padding: 72px 16px 40px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
